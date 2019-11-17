@@ -459,7 +459,10 @@
                 "name": "${APPLICATION_NAME}",
                 "labels": {
                     "app": "${APPLICATION_NAME}"
-                }
+                },
+		"annotations": {
+		    "haproxy.router.openshift.io/disable_cookies": "true"
+		}
             },
             "spec": {
                 "host": "",
